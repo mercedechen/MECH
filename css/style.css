@@ -1,0 +1,126 @@
+body {
+  background: conic-gradient(from 194.13deg at 50% 54.28%, rgba(255, 168, 168, 0.4) -12.57deg, #F4DCF8 45.27deg, #C6C1FC 83.98deg, rgba(244, 220, 248, 0.7) 144.61deg, #FFA8A8 201.18deg, rgba(198, 193, 252, 0.4) 263.35deg, rgba(255, 255, 255, 0) 300.01deg, rgba(255, 168, 168, 0.4) 347.43deg, #F4DCF8 405.27deg);
+  /* background-image: radial-gradient(circle, #FFFFFF,#C6C1FC,#FFA8A8,#FAD9FF); */
+  font-family: Proxima Soft, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2C4A7A;
+  margin: 5px;
+}
+
+/* Navigation Starts */
+header {
+  padding: 25px;
+}  
+
+.logo {
+  display: block;
+  width: 150px;
+}
+
+/* Change nav to a dropdown menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px 30px 0px 30px;
+}
+
+nav li a {
+  color: #fff;
+}
+
+nav li a:hover {
+  color: #2C4A7A;
+}
+
+.contact {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px 30px 0px 30px;
+}
+
+.hide {
+  display: none;
+}
+/* Navigation Ends */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 25px 25px 0 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  color: #2C4A7A;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 200px 0 10px 0;
+}
+
+@media (min-width: 750px) {
+  body {
+    margin: 0px 50px;
+  }
+
+  header {
+    margin: 20px;
+    padding: 0;
+    line-height: 48.68px;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+
+/* Nav starts */
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  .contact:hover + .hide {
+    display: block;
+    position: absolute;
+    background-color: #2C4A7A;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-left: 250px;
+    padding: 25px 45px;
+  }
+
+  .hide img {
+    height: 15px;
+    margin-left: 10px;
+  }
+/* Nav ends */
+}
