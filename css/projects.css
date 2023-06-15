@@ -1,4 +1,5 @@
 .container {
+  justify-content: center;
   margin-bottom: 25px;
   padding: 0;
 }
@@ -16,7 +17,7 @@ img {
   object-position: top left;
 }
 
-#freelance h2 {
+#recent h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,17 +29,17 @@ img {
 }
 
 @media (min-width: 750px) {
-  #recent, #freelance, #internship {
+  #recent, #internship {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 5px;
   }
 
-  h1 {
+  /* h1 {
   grid-area: 1/1/2/4;
-  }
+  } */
 
-  #recent img, #freelance img, #internship img {
+  #recent img, #internship img {
     height: 300px;
     object-fit: cover;
     object-position: top left;
