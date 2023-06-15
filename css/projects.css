@@ -6,45 +6,57 @@ h1 {
   text-align: center;
 }
 
+.container {
+  margin-bottom: 25px;
+  padding: 0;
+}
+
 .container img {
   display: block;
   width: 100%;
 }
 
-#marishop a img {
-  border-radius: 25px 25px 0 0;
-}
-
-#internship {
+#current, #internship {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  overflow: hidden;
+  gap: 10px;
 }
 
 #internship img {
+  width: 100%;
   height: 400px;
+  object-fit: cover;
+  object-position: top left;
 }
 
 #soe {
-  grid-area: 4/3/5/4;
-}
-
-#pbk {
   grid-area: 4/2/5/3;
 }
 
-#ub-sociology {
+#pbk {
   grid-area: 4/1/5/2;
 }
 
-#ovenbird {
-  grid-area: 3/3/4/4;
+#ub-sociology {
+  grid-area: 3/3/3/4;
 }
 
-#blackstone {
+#ovenbird {
   grid-area: 3/2/4/3;
 }
 
-#ub-humanities {
+#blackstone {
   grid-area: 3/1/4/2;
+}
+
+#ub-humanities {
+  grid-area: 2/3/3/4;
+}
+
+#lehrer {
+  grid-area: 2/2/3/3;
+}
+
+#ub-complit {
+  grid-area: 2/1/3/2;
 }
