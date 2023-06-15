@@ -8,8 +8,7 @@ h1 {
 .photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
+  gap: 5px;
 }
 
 .photos img {
