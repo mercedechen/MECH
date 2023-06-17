@@ -3,9 +3,7 @@ body {
   /* background-image: radial-gradient(circle, #FFFFFF,#C6C1FC,#FFA8A8,#FAD9FF); */
   font-family: Proxima Soft, Arial, Helvetica, sans-serif;
   font-size: 18px;
-  font-weight: normal;
   color: #2C4A7A;
-  margin: 5px;
 }
 
 /* Navigation Starts */
@@ -67,7 +65,7 @@ a:visited {
   background-color: rgba(255, 255, 255, 0.85);
   text-align: center;
   margin: 0;
-  padding: 0 0 180px 0;
+  padding: 0 0 200px 0;
 }
 
 footer {
