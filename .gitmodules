@@ -1,3 +1,7 @@
 [submodule "mari-shop-calculator"]
     path = mari-shop-calculator
     url = https://mercedechen.github.io/mari-shop-calculator/
+
+[submodule "may"]
+    path = may
+    url = https://mercedechen.github.io/may/
