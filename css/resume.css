@@ -99,7 +99,7 @@ ul {
   line-height: 1.5;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   .container {
     background: linear-gradient(to right,#D5CCC2 0%,#D5CCC2 40%,#EDEDE9 40%,#EDEDE9 100%);
     margin: 10px auto;
