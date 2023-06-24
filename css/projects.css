@@ -9,16 +9,19 @@
 
 .container img {
   display: block;
+  border-radius: 15px;
   width: 100%;
   object-fit: cover;
   object-position: top left;
+  opacity: 1;
 }
 
 #recent h2 {
+  background-color: #2C4A7A;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2C4A7A;
   font-size: 20px;
   font-weight: 400;
   margin: 0;

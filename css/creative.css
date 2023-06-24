@@ -16,5 +16,7 @@ h1 {
 }
 
 .photos img {
+  border-radius: 15px;
   width: 100%;
+  opacity: .9;
 }
