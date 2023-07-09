@@ -1,0 +1,17 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 800px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+}

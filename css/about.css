@@ -1,0 +1,77 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+#profile {
+  background: #2C4A7A;
+  border-radius: 25px 25px 0 0;
+}
+#profile-card {
+  background: #E6E6E6;
+  border-radius: 25px;
+  padding: 30px;
+}
+#profile-pic {
+  background: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: auto;
+}
+#profile h1 {
+  text-align: center;
+}
+#profile p {
+  color: #463F3A;
+  line-height: 1.25;
+}
+button {
+  display: flex;
+  justify-content: center;
+  background: #2C4A7A;
+  font: 18px 'Proxima Soft', Arial, Helvetica, sans-serif;
+  border: 0;
+  outline: none;
+  color: #fff;
+  border-radius: 25px;
+  margin: 25px auto;
+  padding: 10px 30px;
+}
+#brand img {
+  display: flex;
+  width: 300px;
+  margin: 125px auto 20px auto;  
+}
+#process {
+  font-size: 14px;
+  color: #fff;
+  width: 300px;
+  margin: 50px auto;
+}
+#process li {
+  line-height: 1.25;
+}
+#tags {
+  display: flex;
+  flex-direction: row;
+  color: #463F3A;
+  list-style-type: none;
+  margin-top: 25px;
+}
+#tags ul {
+  margin: 0;
+  padding: 0;
+}
+#tags li {
+  background: #fff;
+  margin: 0 10px;
+  padding: 15px 25px;
+  border-radius: 25px;
+}
+@media (min-width: 800px) {
+  #profile {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    border-radius: 25px 0 0 25px;
+  }
+}
