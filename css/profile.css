@@ -1,46 +1,51 @@
-main {
+#profile {
   display: flex;
   flex-direction: column;
-}
-#profile {
+  margin-top: 50px;
   background: #2C4A7A;
   border-radius: 25px 25px 0 0;
 }
 #profile-card {
   background: #E6E6E6;
   border-radius: 25px;
-  padding: 30px;
+  padding: 50px;
 }
 #profile-pic {
-  background: #fff;
+  background-color: #fff;
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  margin: auto;
+  margin: 0 auto 50px;
+}
+#profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
 }
 #profile h1 {
+  font-size: 25px;
   text-align: center;
 }
 #profile p {
   color: #463F3A;
   line-height: 1.25;
 }
-button {
-  display: flex;
-  justify-content: center;
+.resume {
   background: #2C4A7A;
-  font: 18px 'Proxima Soft', Arial, Helvetica, sans-serif;
-  border: 0;
-  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
+  text-decoration: none;
   border-radius: 25px;
-  margin: 25px auto;
-  padding: 10px 30px;
+  margin: auto;
+  padding: 10px;
+  width: 80px;
 }
 #brand img {
-  display: flex;
+  display: block;
   width: 300px;
-  margin: 125px auto 20px auto;  
+  margin: 125px auto 0;  
 }
 #process {
   font-size: 14px;
@@ -73,5 +78,5 @@ button {
     display: grid;
     grid-template-columns: 350px 1fr;
     border-radius: 25px 0 0 25px;
-  }
+  }  
 }

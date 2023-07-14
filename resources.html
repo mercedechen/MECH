@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MECH | Resources</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/posts.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html"><img src="assets/mech-blue.png" alt="logo" class="logo"></a>
+    <ul class="menu">
+        <li class="dropdown">
+          <a href="index.html">Work</a>
+          <div class="dropdown-menu">
+              <a href="photography.html">Photography</a>
+              <a href="illustrations.html">Illustrations</a>
+              <a href="archive.html">Archive</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="profile.html">About</a>
+          <div class="dropdown-menu">
+            <a href="blog.html">Blog</a>
+            <a href="resources.html">Resources</a>
+          </div>
+        </li>
+        <li class="contact"><a href="mailto:chenmercede@gmail.com">Contact</a></li>
+      </ul>
+  </nav>
+  <main>
+    <div class="posts">
+      <article>
+        <h1>7/12/2023</h1>
+        <p>dropdown menu on hover with html & css</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>HTML</h6>
+            &lt;div class="dropdown"&gt; <br>
+              <div class="indent">
+                &lt;a href="#"&gt; hover &lt;/a&gt; <br>
+                &lt;div class="dropdown-menu"&gt;
+                  <div class="indent">
+                    &lt;a href=""&gt; link 1 &lt;/a&gt; <br>
+                    &lt;a href=""&gt; link 2 &lt;/a&gt; <br>
+                    &lt;a href=""&gt; link 3 &lt;/a&gt; <br>
+                  </div>
+                &lt;/div&gt;<br>
+              </div>
+            &lt;/div&gt;<br><br>
+          </div>
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              .dropdown { <br>
+                <div class="indent">
+                  position: relative; <br>
+                  display: inline-block; <br>
+                </div>
+              } <br><br>
+              .dropdown:hover .dropdown-menu { <br>
+                <div class="indent">
+                  display: block; <br>
+                </div>
+              } <br><br>
+              .dropdown-menu { <br>
+                <div class="indent">
+                  display: none; <br>
+                  position: absolute; <br>
+                  top: 100%; <br>
+                  left: 0; <br>
+                </div>
+              }
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h1>7/2/2023 + 7/4/2023</h1>
+          <p>Attribute selectors allows targetting HTML elements with specific values</p>
+          <div class="box">
+            <div class="sub-box">
+              <h6>html</h6>
+              <code>target="_blank"</code>
+              <code>a[href$=".pdf"]</code>
+            </div>
+          </div>
+          <p>css shorthand for background</p>
+          <div class="box">
+            <div class="sub-box">
+              <h6>css</h6>
+              <code>background: url(../img/) no-repeat right center / 16px 16px;</code>
+            </div>
+          </div>
+      </article>
+
+       <article>
+        <h1>7/1/2023</h1>
+        <p>pseudo-element :after (»)</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              selector:last-child a:after { }
+              <li>creates a virtual element that will render something into the anchor tag after everything else that is in it</li>
+              <li>used to add cosmetic content to an element</li>
+            </code>
+          </div>
+        </div>
+        <p>border vs outline</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              border: 1px solid #ffffff;
+              <li>takes up space and pushes the elements over</li>
+              outline: 1px solid #ffffff;
+              <li>sits on top of an element without taking up more space or moving anything</li>
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h1>6/30/2023</h1>
+        <p>nth-child</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              <li>hierarchy example is ul is the parent, li is the child</li>
+              selector:first-child { }
+              <li>targets the first element </li>
+              selector:nth-child(odd / even) { }
+              selector:first-of-type { }
+              <li>targets the first element within the container</li>
+              selector:last-of-type { }
+              <li>targets the last element within the container</li>
+              selector:nth-child() { }
+              <li>count the number of elements that come before the target within the container</li>
+              *:last-child { }
+              <li>* targets anything that is the last child within the container</li>
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h1>6/28/2023</h1>
+        <p>creating 3 equal columns</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              width: 33%;<br>
+              display: inline-block;<br>
+              vertical-align: top;
+            </code>
+          </div>
+        </div>
+        <p>css selectors</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              h1 + p {
+              <li>adjacent selector that targets the paragraph adjacent to h1 header</li>
+              }
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h1>6/27/2023</h1>
+        <p>background image and properties</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              text-align: center;<br>
+              border: 1px solid #000;<br>
+            </code>
+          </div>
+        </div>
+        <p>rgba and css gradients</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              background: rgba(0,0,0,1);
+              <li>A stands for alpha transparency, ranging from 0 (transparent) to 1 (opaque)</li>
+              background: linear-gradient(to bottom, powderblue, darkblue);<br>
+              background: linear-gradient(to bottom, #000000, #ffffff);
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h1>6/25/2023</h1>
+        <p>image replacement (ir) is text used by search engines</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>html</h6>
+            <code>class="ir"</code>
+          </div>
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              .ir { <br>
+                <div class="indent">
+                  background: black; <br>
+                  width: 800px; <br>
+                  height: 250px; <br>
+                  margin: 0; <br>
+                </div>
+              }
+            </code>
+          </div>
+        </div>
+        <p>background size and properties</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              background-size: contain; <br>
+              <li>creates a background that moves along with a scaleable container</li>
+              background-size: cover;<br>
+              background-repeat: no-repeat;
+            </code>
+          </div>
+        </div><br>
+        <div class="box">
+            <p> sprites are small graphics that are placed together into a single graphic</p>
+        </div>
+        <p>shorthand for font properties</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              font: size font;<br>
+              font: 12px Arial, sans-serif;
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h1>6/23/2023</h1>
+        <p>blocks, inline and inline-block elements</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              display: block;<br>
+              display: inline;<br>
+              display: inline-block;
+            </code>
+          </div>
+        </div>
+        <p>header styles</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>html</h6>
+            <code>
+              &lt;header&gt; &lt;/header&gt;<br>
+              &lt;nav&gt; &lt;/nav&gt;
+            </code>
+          </div>
+        </div>
+        <p>position properties</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              position: relative;<br>
+              position: absolute;<br>
+              <li>element position aligns based on container that is relative</li>
+              position: fixed;
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h1>6/22/2023</h1>
+        <p>media queries</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              @media (min-width: 800px) { }<br>
+              @media (max-width: 799px) { }
+            </code>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h1>6/21/2023</h1>
+        <p>css styles</p>
+        <div class="box">
+          <div class="sub-box">
+            <h6>css</h6>
+            <code>
+              line-height: 1.25;<br>
+              font-weight: 200;<br>
+              font-weight: 400;<br>
+              font-weight: 600;<br>
+              font-weight: 400;<br>
+              float: left;<br>
+              float: right;<br>
+              overflow: hidden;<br>
+              <li>used to hide any content that overflows beyond the bounds of its container</li>
+              overflow-x: hidden;<br>
+              overflow-y: hidden;
+            </code>
+          </div>
+        </div>
+      </article>
+</div>
+</main>
+</body>
+</html>

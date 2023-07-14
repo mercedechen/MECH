@@ -1,94 +1,150 @@
 body {
-  font: 18px 'Proxima Soft', Arial, Helvetica, sans-serif;
+  font: 16px 'Proxima Soft', Arial, Helvetica, sans-serif;
   color: #463F3A;
-  margin: 25px 10px;
+  margin: 75px auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .logo {
+  display: block;
+  margin: auto;
   width: 150px;
 }
-nav ul {
-  list-style-type: none;
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 25px 0;
   padding: 0;
 }
-nav li, #quick-links, footer {
-  text-align: center;
+.menu li {
+  list-style: none;
+  margin: 15px auto;
 }
-nav li {
-  text-align: center;
-  font-size: 20px;
+.menu a {
+  text-decoration: none;
+  color: #E6E6E6;
   font-weight: 600;
-  padding: 10px;
+  padding: 10px 200px;
 }
-.hide {
+.menu a:visited {
+  color: #E6E6E6;
+}
+.menu a:hover, .menu a:focus, .menu a:active {
+  color: #2C4A7A;
+}
+.dropdown-menu {
   display: none;
 }
-a {
-  color: #E6E6E6;
-  text-decoration: none;
+.contact {
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
 }
-a:visited {
-  color: #E6E6E6;
+.feature, .gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-a:hover {
-  color: #2c4a7a;
-}
-h1, p {
-  text-align: center;
+.feature img, .gallery img {
+  display: block;
+  width: 100%;
+  margin: auto;
 }
 footer {
-  background: #fff;
-  color: #2c4a7a;
-  border-radius: 15px;
-  margin: 10px 0;
-  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+.projects {
+  margin-top: 50px;
+}
+.projects img {
+  display: block;
+  width: 100%;
 }
 @media (min-width: 800px) {
   body {
-    margin: 25px;
+    margin: 100px 156px;
   }
-  nav li {
-    display: inline-block;
-    padding: 0;
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .logo {
+    margin-right: auto;
   }
   .menu {
-    position: absolute;
-    right: 25px;
-    top: 25px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
   }
   .menu li {
-    margin: 25px;
+    margin: 0 0 0 50px;
+    padding: 0;
+    text-align: left;
   }
-  .contact {
+  .menu a {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .dropdown {
+    position: relative;
     display: inline-block;
   }
-  .contact:hover + .hide {
-  background-color: #E6E6E6;
-  display: block;
-  position: absolute;
-  color: #463F3A;
-  border-radius: 15px;
-  right: 25px;
-  padding: 25px 5px 25px 25px;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
-  width: 225px;
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
-  .hide img {
-    height: 15px;
-    margin-left: 10px;
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 15px;
   }
-  #quick-links {
+  .menu .dropdown-menu a {
+    background-color: #fff;
+    color: #2C4A7A;
+    display: block;
+    padding: 10px;
+    min-width: 120px;
+  }
+  .dropdown-menu a:hover {
+    background-color: #E6E6E6;
+    color: #2C4A7A;
+    padding: 15px;
+  }
+  .contact a {
+    background: #2C4A7A;
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+  .contact a:hover {
+    color: #fff;
+  }
+  .feature, .gallery, .archive {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 25px;
-    margin-top: 25px;
+    gap: 5px;
+    margin-top: 50px;
   }
-  #quick-links h1 {
-    grid-area: 1/1/3/2;
+  .feature, .archive {
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(30vw, 160px);
   }
-  #quick-links h1, h2 {
-    margin: 0;
+  .feature img, .gallery img, .archive img {
+    display: block;
+    width: 100%;
+  }
+  .feature img, .archive img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
   }
 }
